@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>!-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>!-->
+    <title>Vite Webshop</title>
+  </head>
+  <body>
+    <body>
+      <div class="greyScreen">
+      </div>
+      <div class="sidebar">
+          <div class="sidebar__bar">
+              <div class="hamCont">
+                <div class="hamNav"></div>
+                <div class="hamNav"></div>
+                <div class="hamNav"></div>
+              </div>
+              <a href="#uren"><p class="sidebar__bar__tekst">Openingsuren</p></a>
+              <a href="#producten"><p class="sidebar__bar__tekst">Producten</p></a>
+              <a href="#"><p class="sidebar__bar__tekst">Comming soon...</p></a>
+              <a href="#"><p class="sidebar__bar__tekst">Comming soon...</p></a>
+          </div>
+          <div class="buttons">
+              <div class="login">
+                  <button class="login__button"><p>Login</p></button>
+              </div>
+              <div class="signup">
+                  <button class="signup__button"><p>Sign-up</p></button>
+              </div>
+          </div>
+          <div class="sidebar__contact">
+              <p>0474565778</p>
+              <p>yannickkindt@hotmail.com</p>
+              <!--<p>Wilg 9, 2930 Brasschaat</p>!-->
+              <p id="address">fetching location...</p>
+          </div>
+      </div>
+      <div class="loginScreen">
+          <p class="loginScreen__Tekst">welkom</p>
+          <form class="form">
+              <label for="gebruiker"></label>
+              <input type="text" id="naam" name="naam" placeholder="Gebruikersnaam">
+              <br>
+              <br>
+              <label for="wachtwoord"></label>
+              <input type="password" id="ww" name="ww" placeholder="Wachtwoord">
+            </form>
+            <button class="loginScreen__loginConfirm">Login</button>
+            <br>
+            <p class="loginScreen--Tekst">momenteel niet beschikbaar</p>
+          <div class="loginScreen--form">
+          </div>
+      </div>
+      <div class="main">
+              <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><p>groene diamand 1ct. (peer) €6.000,00</p><img src="green_diamond.jpg"></div>
+                    <div class="swiper-slide"><p>donkergroene diamand 1ct. (emerald) €4.500,00</p><img src="green_diamond_square.jpg"></div>
+                    <div class="swiper-slide"><p>donkergroene diamand 1ct. (peer) €4.200,00</p><img src="green_diamond_diamond.jpg"></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+              </div>
+              <section id="uren">
+              <div class="info">
+                  <div class="info__uren">
+                      <p class="info__uren__title">Openingsuren</p>
+                      <p class="info__uren__text">Maandag t.e.m. Vrijdag open <b>8:00</b> — <b>20:00</b></p>
+                      <p class="info__uren__text">Zaterdag open <b>8:00</b> — <b>18:00</b></p>
+                      <p class="info__uren__text">Zondag gesloten</p>
+                      <p class="info__uren__feest">*Op feestdagen kunnen de uren afwijken.</p>
+                  </div>
+              </div>
+              </section>
+              <section id="producten">
+              <div class="main__raster">
+                  <div class="main__raster__block"><img src="green_diamond.jpg"><b><p>groene diamand 1ct. (peer)</p></b><br><p>€6.000,00</p></div>
+                  <div class="main__raster__block"><img src="green_diamond_square.jpg"><b><p>donkergroene diamand 1ct. (emerald)</p></b><br><p>€4.500,00</p></div>
+                  <div class="main__raster__block"><img src="green_diamond_diamond.jpg"><b><p>groene diamand 1ct. (peer)</p></b><br><p>€4.200,00</p></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+                  <div class="main__raster__block"><img src=""></div>
+              </div>
+              </section>
+      </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

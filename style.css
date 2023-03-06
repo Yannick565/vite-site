@@ -1,0 +1,481 @@
+html, body{
+  scroll-behavior: smooth!important;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-columns: 1.2fr 5fr;
+  grid-template-rows: 5fr;
+  gap: 0px 0px;
+}
+
+.greyScreen{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(50, 50, 50, 0.5);
+  z-index: 2;
+  visibility: hidden;
+}
+
+.sidebar{
+  height: 100vh;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar__bar{
+  background-color: rgb(235, 235, 235);
+  margin: auto;
+  margin-top: 16px;
+  height: 60vh;
+  width: 90%;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 8px #1e1e1e40);
+  box-sizing: border-box;
+  padding: 40px 40px 40px 20px;
+}
+
+.sidebar__bar a{
+  text-decoration: none;
+}
+
+.sidebar__bar__tekst{
+  padding: 5px;
+  margin-top: 0px;
+  font-family: monospace;
+  font-size: 15px;
+  color: black;
+}
+
+.sidebar__bar__tekst:hover{
+  color: #29c343;
+}
+
+.loginScreen{
+  background-color: rgb(250, 250, 250);
+  margin: auto;
+  margin-top: 16px;
+  height: 60vh;
+  width: 320px;
+  border-radius: 18px;
+  position: absolute;
+  left: 40vw;
+  top: 12vh;
+  z-index: 10;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginScreen__Tekst{
+  color: #29c343;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  font-weight: 100;
+  margin-top: 55px;
+}
+
+.loginScreen button{
+  background-color: #29c343;
+  height: 42px;
+  width: 30%;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 6px #1e1e1e40);
+  border: 0px;
+  margin-top: 175px;
+  color: white;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.loginScreen button:hover{
+  opacity: 90%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.loginScreen--Tekst{
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  padding: 6px;
+  inline-size: fit-content;
+  background-color: rgba(198, 66, 66, 0.3);
+  color: rgb(198, 66, 66);
+  border-radius: 6px;
+  visibility: hidden;
+}
+
+.sidebar__contact{
+  margin: auto;
+  width: 90%;
+  background-color: rgb(235, 235, 235);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0px 0px 20px -10px #1e1e1e40 inset;
+  opacity: 90%;
+}
+
+.sidebar__contact p{
+  padding: 4px;
+  margin: 0px;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.form{
+  position: absolute;
+  top: 18vh;
+  z-index: 3;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 10px; 
+}
+
+#naam, #ww{
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 0px;
+  background-color: rgb(235, 235, 235);
+}
+
+.loginScreen--form{
+  visibility: none;
+}
+
+.buttons{
+  width: 90%;
+  height: 26px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.buttons :hover{
+  opacity: 90%;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.login__button{
+  background-color: rgb(235, 235, 235);
+  margin: auto;
+  margin-top: 16px;
+  height: 42px;
+  width: 30%;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 6px #1e1e1e40);
+  border: 0px;
+  float: right;
+  margin-left: 9px;
+}
+
+.signup__button{
+  background-color: #29c343;
+  margin: auto;
+  margin-top: 16px;
+  height: 42px;
+  width: 30%;
+  border-radius: 8px;
+  filter: drop-shadow(0px 0px 6px #1e1e1e40);
+  top: 0;
+  border: 0px;
+  float: right;
+}
+
+.signup__button p{
+  color: white;
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+
+.login__button p{
+  margin: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+}
+
+.main{
+  margin-top: 16px;
+  height: 300vh;
+}
+
+.swiper {
+  width: 1000px;
+  height: 500px;
+  background-color: white;
+}
+
+.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+  width: 75vw;
+}
+
+.swiper-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+.swiper-horizontal{
+  margin-bottom: 80px;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination{
+  --swiper-theme-color: #29c343;
+}
+
+.swiper-slide p{
+  color: #29c343;
+  font-family: monospace;
+  font-size: 20px;
+  margin: 8px;
+  opacity: 25%;
+  transition: 0.2s;
+  float: right;
+}
+
+.swiper-slide p:hover{
+  opacity: 100%;
+}
+
+.info{
+  margin: auto;
+  width: 65vw;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 40px;
+  box-shadow: 0px 0px 20px -10px #1e1e1e40 inset;
+}
+
+#uren{
+  padding-top: 16px;
+  padding-bottom: 84px;
+}
+
+.info__uren__title{
+  color: #29c343;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 36px;
+  margin: 0px;
+  padding-bottom: 20px;
+}
+
+.info__uren__text{
+  color: black;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.info__uren__feest{
+  color: rgba(100, 100, 100, 0.5);
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main__raster{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  flex-direction: row;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.main__raster__block{
+  height: 300px;
+  width: 300px;
+  background-color: white;
+}
+
+#producten{
+  padding-top: 16px
+}
+
+.main__raster__block img{
+  height: 100%
+}
+
+.main__raster__block p{
+  padding-left: 4px;
+  margin-top: -34px;
+  color: #29c343;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.hamCont{
+  width: fit-content;
+  margin: auto;
+}
+
+.hamNav{
+  background-color: #29c343;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+  border-radius: 2px;
+  display: none;
+}
+
+#address{
+  animation:blinkingText 1s infinite;
+}
+
+@keyframes blinkingText{
+  0%{     color: #29c343;;}
+  49%{    color: #29c343;}
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #29c343;}
+}
+
+@media screen and (max-width: 500px){
+
+  body{
+    display: block;
+  }
+
+  .info{
+    width: 90%;
+    margin: auto;
+  }
+
+  .main__raster{
+    height: 96vh;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-direction: row;
+    align-content: flex-start;
+  }
+
+  .main__raster__block{
+    height: 180px;
+    width: 180px;
+    background-color: white;
+  }
+
+  .main__raster__block p{
+    padding-left: 4px;
+    margin-top: -26px;
+    color: #29c343;
+    font-family: monospace;
+    font-size: 8px;
+  }
+
+  .swiper{
+    width: 90%;
+  }
+
+  .sidebar{
+    position: relative;
+    height: 100%;
+  }
+
+  .sidebar__bar{
+    height: fit-content;
+    padding: 20px 20px 20px 20px;
+  }
+
+  .sidebar__bar__tekst{
+    display: none;
+  }
+
+  .main{
+    height: 100%;
+  }
+
+  .loginScreen{
+    left: 9vw;
+  }
+
+  #uren{
+    padding-bottom: 20px;
+  }
+
+  .buttons{
+    padding-bottom: 60px;
+  }
+
+  .greyScreen{
+    margin-top: -16px;
+  }
+
+  .hamNav{
+    display: block;
+    transition: 0.2s; 
+  }
+
+  .loginScreen button{
+    margin-top: 130px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px){
+  .info{
+    width: 70vw;
+    margin: 0;
+  }
+
+  .main__raster{
+    width: 70vw;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px){
+  .info{
+    width: 65vw;
+    margin: 0;
+  }
+
+  .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    width: 65vw;
+  }
+}
+
+@media screen and (min-width: 1600px){
+
+  .buttons{
+      padding-bottom: 265px;
+  }
+
+  .main__raster{
+      height: 90vh;
+  }
+
+  .main__raster__block{
+    height: 280px;
+    width: 280px;
+    background-color: white;
+    transition: 1s;
+  }
+  
+}
+
+@media screen and (min-width: 2000px){
+  .buttons{
+      padding-bottom: 350px;
+  }
+
+  .main__raster__block{
+    height: 340px;
+    width: 340px;
+    background-color: white;
+  }
+
+}
