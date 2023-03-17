@@ -4,7 +4,7 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const swiper = new Swiper('.swiper', {
+new Swiper('.swiper', {
   modules: [Navigation, Pagination],
   direction: 'horizontal',
   loop: true,
@@ -86,7 +86,7 @@ function location() {
 function error(){
   document.getElementById('address').textContent = "error: can't fetch data";
   document.getElementById('address').style.color = "rgb(198, 66, 66)";
-};
+}
 
  const getAddressFromCoordinates = async () =>{
     const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/4.5138331623733166,51.29360659645906.json?access_token=pk.eyJ1IjoiYXB5YW5uaWNrIiwiYSI6ImNsZW1udHMzdTBiN2ozc21xeHNoOWRmN2EifQ.l4PorYBjX7EXhhPpRhj6dQ`);
